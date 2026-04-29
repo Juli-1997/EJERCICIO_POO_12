@@ -1,0 +1,26 @@
+package com.mypoo2.ejercicio_12;
+
+import static com.mypoo2.ejercicio_12.calculos.calcularRetencion;
+import static com.mypoo2.ejercicio_12.calculos.calcularSalarioBruto;
+import static com.mypoo2.ejercicio_12.calculos.calcularSalarioNeto;
+
+/**
+ *
+ * @author HP-255-G10-Juliana-Castellar
+ */
+public class Ejercicio_12 {
+
+      public static void main(String[] args) {
+
+        int horas_semana = 48;
+        int valor_hora = 5000;
+
+        double salario_bruto = calcularSalarioBruto(horas_semana, valor_hora);
+        int retencion = calcularRetencion(salario_bruto);
+        double salario_neto = calcularSalarioNeto(salario_bruto, retencion);
+
+        System.out.println("El salario bruto es: " + salario_bruto);
+        System.out.println("La retencion de la fuente es: " + retencion);
+        System.out.println("El salario neto es: " + salario_neto);
+    }
+}
