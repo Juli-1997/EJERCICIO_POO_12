@@ -1,0 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package com.mypoo2.ejercicio_12;
+
+public class calculos{
+
+    public static double calcularSalarioBruto(int horas_semana, int valor_hora) {
+        return horas_semana * valor_hora;
+    }
+
+    public static int calcularRetencion(double salario_bruto) {
+        double por_retencion = 12.5 / 100;
+        return (int) (salario_bruto * por_retencion);
+    }
+
+    public static double calcularSalarioNeto(double salario_bruto, int retencion) {
+        return salario_bruto - retencion;
+    }
+}
